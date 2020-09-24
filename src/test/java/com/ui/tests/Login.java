@@ -11,9 +11,14 @@ public class Login extends WebUi{
 	
 	@Test
 	public void performSearch() {
-		driver.get("https://www.google.com/");
+		driver.get("http://automationpractice.com/index.php");
 //		driver.findElement(By.name("q")).sendKeys("Browserstack Guide"); // name locator for text box
-		WebElement searchbutton = driver.findElement(By.name("btnK"));// name locator for google search
-		searchbutton.click();
+		WebElement signIn = driver.findElement(By.xpath("//a[@title='Log in to your customer account']"));
+		signIn.click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 }
