@@ -3,6 +3,11 @@
   <groupId>TestAutomation</groupId>
   <artifactId>TestAutomation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+  <sonar.projectKey>prateekSethiQA_TestAutomation_Repo</sonar.projectKey>
+  <sonar.organization>prateeksethiqa</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties>
   	<dependencies>
 		
 		<dependency>
